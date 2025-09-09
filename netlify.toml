@@ -1,0 +1,26 @@
+[build]
+  command = "pip install -r requirements.txt && pip install gunicorn && python init_db.py && python migrate_database.py"
+  publish = "./static"
+  functions = "functions"
+
+[build.environment]
+  PYTHON_VERSION = "3.12.1"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[dev]
+  command = "python app.py"
+  port = 5000
+  publish = "static"
+  targetPort = 5000
+
+[functions]
+  node_bundler = "esbuild"
+
+[functions.redirects]
+  from = "/*"
+  to = "/.netlify/functions/server"
+  status = 200

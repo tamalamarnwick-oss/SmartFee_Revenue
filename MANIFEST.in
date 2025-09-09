@@ -1,0 +1,16 @@
+include *.txt
+include requirements.txt
+include .env.example
+recursive-include your_application/templates *
+recursive-include your_application/static *
+include your_application/*.py
+# Include top-level templates and static for deployments that install the package
+recursive-include templates *
+recursive-include static *
+recursive-include app/templates *
+recursive-include app/static *
+include app.py
+include wsgi.py
+include gunicorn.conf.py
+include Procfile
+include render.yaml
