@@ -1,0 +1,85 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+.venv-1/
+python 3.13.7/
+
+# Byte-compiled/optimized files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# SQLite database files
+instance/
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment variables file
+.env
+
+# PyInstaller build files
+build/
+dist/
+*.spec
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Backup files
+*_backup_*.db
+
+# AI and development files
+.ai-code-review/
+.qodo/
+.snapshots/
+src/
+*.vsix
+
+# Test and debug files
+test_*.py
+debug_*.py
+run_*.py
+*.bat
+manual_*.py
+quick_*.py
+simple_*.py
+setup_*.py
+force_*.py
+fix_*.py
+init_*.py
+migrate_*.py
+populate_*.py
+reset_*.py
+update_*.py
+check_*.py
+clear_*.py
+compare_*.py
+correct_*.py
+create_*.py
+ensure_*.py
+insert_*.py
+reassign_*.py
+report_*.py
+tenant_*.py
+add_*.py
+api_*.py
+enhanced_*.py
+income_*.py
+
+# Documentation and readme files
+*.md
+!README.md
